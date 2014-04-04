@@ -1,14 +1,26 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    
+     <ImageView
+        android:id="@+id/buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttom"
+        android:contentDescription="@string/dec_item"
+        android:scaleType="centerCrop" />
 
     <com.ijustyce.scrollSuspend.SubspendScrollView
+        android:layout_above="@id/buttom"
         android:id="@+id/scrollView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="wrap_content" >
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -21,10 +33,10 @@
 
                 <ImageView
                     android:id="@+id/iamge"
-                    android:contentDescription="@string/dec_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/pic"
+                    android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
 
                 <include
@@ -32,24 +44,24 @@
                     layout="@layout/buy_layout" />
 
                 <ImageView
-                    android:contentDescription="@string/dec_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/one"
+                    android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
 
                 <ImageView
-                    android:contentDescription="@string/dec_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/one"
+                    android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
 
                 <ImageView
-                    android:contentDescription="@string/dec_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/one"
+                    android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
             </LinearLayout>
 
@@ -59,4 +71,4 @@
         </FrameLayout>
     </com.ijustyce.scrollSuspend.SubspendScrollView>
 
-</LinearLayout>
+</RelativeLayout>
