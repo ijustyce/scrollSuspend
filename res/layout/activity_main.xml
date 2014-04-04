@@ -40,33 +40,33 @@
                     android:scaleType="centerCrop" />
 
                 <include
-                    android:id="@+id/buy"
+                    android:id="@+id/user"
                     layout="@layout/buy_layout" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/one"
+                    android:background="@drawable/item"
                     android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/one"
+                    android:background="@drawable/item"
                     android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/one"
+                    android:background="@drawable/item"
                     android:contentDescription="@string/dec_item"
                     android:scaleType="centerCrop" />
             </LinearLayout>
 
             <include
-                android:id="@+id/top_buy_layout"
+                android:id="@+id/user_top"
                 layout="@layout/buy_layout" />
         </FrameLayout>
     </com.ijustyce.scrollSuspend.SubspendScrollView>
